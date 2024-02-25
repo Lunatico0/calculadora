@@ -14,4 +14,14 @@ body{
             margin-top: 100px;
         }
     }
+    footer{
+        display: flex;
+        justify-content: space-around;
+        p{
+            position: fixed;
+            bottom: 0;
+            color: #a0a0a0;
+            margin-bottom: 50px;
+        }
+    }
 }
