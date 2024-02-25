@@ -50,33 +50,53 @@ while (option.toLowerCase() !== "salir") {
 function sumaAns(ans){
     num2 = pedirNumero("Ingrese el 2° sumando");
     resultado = ans + num2;
-    console.log("La suma de " + ans + " + " + num2 + " = " + resultado);
-    alert("La suma de " + ans + " + " + num2 + " = " + resultado);
-    return resultado;
+    if (!isNaN(resultado)) {
+        console.log("La suma de " + ans + " + " + num2 + " = " + resultado);
+        alert("La suma de " + ans + " + " + num2 + " = " + resultado);
+        return resultado;
+    } else {
+        alert("Error!");
+        return ans;
+    }
 }
 
 function restaAns(ans){
     num2 = pedirNumero("Ingrese el sustraendo");
     resultado  = ans - num2;
-    console.log("La diferencia de " + ans + " - " + num2 + " = " + resultado);
-    alert("La diferencia de " + ans + " - " + num2 + " = " + resultado);
-    return resultado;
+    if (!isNaN(resultado)) {
+        console.log("La diferencia de " + ans + " - " + num2 + " = " + resultado);
+        alert("La diferencia de " + ans + " - " + num2 + " = " + resultado);
+        return resultado;
+    } else {
+        alert("Error!");
+        return ans;
+    }
 }
 
 function divisionAns(ans){
     num2 = pedirNumero("Ingrese el dividendo");
     resultado = ans / num2;
-    console.log("El cociente de " + ans + " / " + num2 + " = " + resultado);
-    alert("El cociente de " + ans + " / " + num2 + " = " + resultado);
-    return resultado;
+    if (!isNaN(resultado)) {
+        console.log("El cociente de " + ans + " / " + num2 + " = " + resultado);
+        alert("El cociente de " + ans + " / " + num2 + " = " + resultado);
+        return resultado;
+    } else {
+        alert("Error!");
+        returnans;
+    }
 }
 
 function multiplicacionAns(ans){
     num2 = pedirNumero("Ingrese el multiplicador");
     resultado = ans * num2;
-    console.log("El producto de " + ans + " * " + num2 + " = " + resultado);
-    alert("El producto de " + ans + " * " + num2 + " = " + resultado);
-    return resultado;
+    if (!isNaN(resultado)) {
+        console.log("El producto de " + ans + " * " + num2 + " = " + resultado);
+        alert("El producto de " + ans + " * " + num2 + " = " + resultado);
+        return resultado;
+    } else {
+        alert("Error!");
+        return ans;
+    }
 }
 
 function suma(){
@@ -84,9 +104,14 @@ function suma(){
     num1 = pedirNumero("Ingrese el 1° sumando");
     num2 = pedirNumero("Ingrese el 2° sumando");
     resultado = num1 + num2;
-    console.log("La suma de " + num1 + " + " + num2 + " = " + resultado);
-    alert("La suma de " + num1 + " + " + num2 + " = " + resultado);
-    return resultado;
+    if (!isNaN(resultado)) {
+        console.log("La suma de " + num1 + " + " + num2 + " = " + resultado);
+        alert("La suma de " + num1 + " + " + num2 + " = " + resultado);
+        return resultado;
+    } else {
+        alert("Error!");
+        return;
+    }
 }
 
 function resta(){
@@ -94,19 +119,29 @@ function resta(){
     num1 = pedirNumero("Ingrese el minuendo");
     num2 = pedirNumero("Ingrese el sustraendo");
     resultado  = num1 - num2;
-    console.log("La diferencia de " + num1 + " - " + num2 + " = " + resultado);
-    alert("La diferencia de " + num1 + " - " + num2 + " = " + resultado);
-    return resultado;
+    if (!isNaN(resultado)) {
+        console.log("La diferencia de " + num1 + " - " + num2 + " = " + resultado);
+        alert("La diferencia de " + num1 + " - " + num2 + " = " + resultado);
+        return resultado;
+    } else {
+        alert("Error!");
+        return;
+    }
 }
 
 function division(){
     let num1, num2;
-    num1 = pedirNumero("Ingrese el divisor");
-    num2 = pedirNumero("Ingrese el dividendo");
+    num1 = pedirNumero("Ingrese el dividendo");
+    num2 = pedirNumero("Ingrese el divisor");
     resultado = num1 / num2;
+    if (!isNaN(resultado)) {
     console.log("El cociente de " + num1 + " / " + num2 + " = " + resultado);
     alert("El cociente de " + num1 + " / " + num2 + " = " + resultado);
     return resultado;
+    } else {
+        alert("Error!");
+        return;
+    }
 }
 
 function multiplicacion(){
@@ -114,9 +149,14 @@ function multiplicacion(){
     num1 = pedirNumero("Ingrese el multiplicando");
     num2 = pedirNumero("Ingrese el multiplicador");
     resultado = num1 * num2;
-    console.log("El producto de " + num1 + " * " + num2 + " = " + resultado);
-    alert("El producto de " + num1 + " * " + num2 + " = " + resultado);
-    return resultado;
+    if (!isNaN(resultado)) {
+        console.log("El producto de " + num1 + " * " + num2 + " = " + resultado);
+        alert("El producto de " + num1 + " * " + num2 + " = " + resultado);
+        return resultado;
+    } else {
+        alert("Error!");
+        return ans;
+    }
 }
 
 function pedirNumero(mensaje) {
