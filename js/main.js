@@ -7,32 +7,32 @@ option = prompt('¿Qué deseas hacer?\n\n1. Sumar.\n2. Restar.\n3. Multiplicar.\
 while (option.toLowerCase() !== "salir") {
     switch (option) {
         case "1":
-            ans = suma();
+            ans = sumar();
             break;
         case "2":
-            ans = resta();
+            ans = restar();
             break;
         case "3":
-            ans = multiplicacion();
+            ans = multiplicar();
             break;
         case "4":
-            ans = division();
+            ans = dividir();
             break;
         case "5":
             option = prompt('¿Qué deseas hacer con ' + ans + '?\n\n1. Sumar.\n2. Restar.\n3. Multiplicar.\n4. Dividir.\n\nDe lo contrario, ingresa "salir" si quieres salir.');
             while (option.toLowerCase() !== "salir") {
                 switch (option) {
                     case "1":
-                        ans = sumaAns(ans);
+                        ans = sumarAns(ans);
                         break;
                     case "2":
-                        ans = restaAns(ans);
+                        ans = restarAns(ans);
                         break;
                     case "3":
-                        ans = multiplicacionAns(ans);
+                        ans = multiplicarAns(ans);
                         break;
                     case "4":
-                        ans = divisionAns(ans);
+                        ans = dividirAns(ans);
                         break;
                     default:
                         alert("Opción no válida. Inténtalo de nuevo.");
@@ -47,7 +47,7 @@ while (option.toLowerCase() !== "salir") {
 }
 
 
-function sumaAns(ans){
+function sumarAns(ans){
     num2 = pedirNumero("Ingrese el 2° sumando");
     resultado = ans + num2;
     if (!isNaN(resultado)) {
@@ -60,7 +60,7 @@ function sumaAns(ans){
     }
 }
 
-function restaAns(ans){
+function restarAns(ans){
     num2 = pedirNumero("Ingrese el sustraendo");
     resultado  = ans - num2;
     if (!isNaN(resultado)) {
@@ -73,7 +73,7 @@ function restaAns(ans){
     }
 }
 
-function divisionAns(ans){
+function dividirAns(ans){
     num2 = pedirNumero("Ingrese el dividendo");
     resultado = ans / num2;
     if (!isNaN(resultado)) {
@@ -86,7 +86,7 @@ function divisionAns(ans){
     }
 }
 
-function multiplicacionAns(ans){
+function multiplicarAns(ans){
     num2 = pedirNumero("Ingrese el multiplicador");
     resultado = ans * num2;
     if (!isNaN(resultado)) {
@@ -99,7 +99,7 @@ function multiplicacionAns(ans){
     }
 }
 
-function suma(){
+function sumar(){
     let num1, num2;
     num1 = pedirNumero("Ingrese el 1° sumando");
     num2 = pedirNumero("Ingrese el 2° sumando");
@@ -114,7 +114,7 @@ function suma(){
     }
 }
 
-function resta(){
+function restar(){
     let num1, num2;
     num1 = pedirNumero("Ingrese el minuendo");
     num2 = pedirNumero("Ingrese el sustraendo");
@@ -129,7 +129,7 @@ function resta(){
     }
 }
 
-function division(){
+function dividir(){
     let num1, num2;
     num1 = pedirNumero("Ingrese el dividendo");
     num2 = pedirNumero("Ingrese el divisor");
@@ -144,7 +144,7 @@ function division(){
     }
 }
 
-function multiplicacion(){
+function multiplicar(){
     let num1, num2;
     num1 = pedirNumero("Ingrese el multiplicando");
     num2 = pedirNumero("Ingrese el multiplicador");
